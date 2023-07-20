@@ -271,12 +271,30 @@ select > option {
   }
 
   video {
-    height: 98vh;
+    height: 50vh;
     object-fit: contain;
   }
 
   .video-fullscreen {
     height: 97.5vh;
     border-radius: 0;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .player {
+    min-width: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  video {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .video-fullscreen {
+    height: 100vh;
+    width: 100vw;
   }
 }
